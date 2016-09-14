@@ -8,7 +8,7 @@ using Cassandra;
 using WLM_WLMN.Common.DTOs;
 using WLM_WLMN.Common.Interfaces;
 
-namespace WLM_WLMN.Storage
+namespace WLM_WLMN.CassandraStorage
 {
     public class TermStorage : ITermStorage
     {
@@ -16,8 +16,7 @@ namespace WLM_WLMN.Storage
 
         public TermStorage()
         {
-            var cluster = Cluster.Builder().AddContactPoint("192.168.159.128").Build();
-            _session = cluster.Connect("wlm");
+            _session = Common.Session;
             _session.Execute("CREATE TABLE IF NOT EXISTS terms( terms_id uuid ,content text,creation_Date timestamp, PRIMARY KEY(terms_id));");
         }
 

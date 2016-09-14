@@ -3,7 +3,7 @@ using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 using WLM_WLMN.Common.Interfaces;
 using WLM_WLMN.Logic.Terms;
-using WLM_WLMN.Storage;
+using WLM_WLMN.CassandraStorage;
 
 namespace WLM_WLMN.Web.App_Start
 {

@@ -304,9 +304,9 @@
       <Project>{74ba4ca2-4cfd-419e-a437-d310323b2587}</Project>
       <Name>WLM-WLMN.Logic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WLM-WLMN.Storage\WLM-WLMN.Storage.csproj">
+    <ProjectReference Include="..\WLM-WLMN.Storage\WLM-WLMN.CassandraStorage.csproj">
       <Project>{3f71fd70-edb2-4d7e-9534-b6fdacaf9069}</Project>
-      <Name>WLM-WLMN.Storage</Name>
+      <Name>WLM-WLMN.CassandraStorage</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

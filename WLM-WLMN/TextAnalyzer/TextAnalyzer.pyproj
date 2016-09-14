@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d270ad47-1835-4d71-bd0e-8768d3194761</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <StaticUriPattern>^/static/.*</StaticUriPattern>
+    <StaticUriRewrite>^/$(MSBuildProjectName)/static/.*</StaticUriRewrite>
+    <PythonWsgiHandler>$(MSBuildProjectName).app</PythonWsgiHandler>
+    <Name>TextAnalyzer</Name>
+    <RootNamespace>TextAnalyzer</RootNamespace>
+    <InterpreterId>{89e84394-af30-4b77-ad65-bb0eb365cc07}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+    <Compile Include="TextAnalyzer\Pigeo\pigeo-master\params.py" />
+    <Compile Include="TextAnalyzer\Pigeo\pigeo-master\pigeo.py" />
+    <Compile Include="TextAnalyzer\Pigeo\pigeo-master\twitterapi.py" />
+    <Compile Include="TextAnalyzer\__init__.py" />
+    <Compile Include="TextAnalyzer\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TextAnalyzer\" />
+    <Folder Include="TextAnalyzer\Pigeo\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\Models\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\Models\lpworld\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrna\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrworld\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\static\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\css\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\fonts\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\js\" />
+    <Folder Include="TextAnalyzer\Pigeo\pigeo-master\templates\" />
+    <Folder Include="TextAnalyzer\static\" />
+    <Folder Include="TextAnalyzer\static\content\" />
+    <Folder Include="TextAnalyzer\static\fonts\" />
+    <Folder Include="TextAnalyzer\static\scripts\" />
+    <Folder Include="TextAnalyzer\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\download_models.sh" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\Models\lpworld\not distributed" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrna\clf.pkl.gz" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrna\coordinate_address.pkl.gz" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrna\label_coordinate.pkl.gz" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrna\vectorizer.pkl.gz" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrworld\clf.pkl.gz" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrworld\coordinate_address.pkl.gz" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrworld\label_coordinate.pkl.gz" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\Models\lrworld\vectorizer.pkl.gz" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\README.md" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\requirements.txt" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\css\bootstrap-theme.css" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\css\bootstrap-theme.css.map" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\css\bootstrap-theme.min.css" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\css\bootstrap.css" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\css\bootstrap.css.map" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\css\bootstrap.min.css" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\css\bootstrap.min.css.map" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\js\bootstrap.js" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\js\bootstrap.min.js" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\bootstrap-3.3.6-dist\js\npm.js" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\static\styles\main.css" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\templates\index-simple.html" />
+    <Content Include="TextAnalyzer\Pigeo\pigeo-master\templates\index.html" />
+    <Content Include="TextAnalyzer\static\content\bootstrap.css" />
+    <Content Include="TextAnalyzer\static\content\bootstrap.min.css" />
+    <Content Include="TextAnalyzer\static\content\site.css" />
+    <Content Include="TextAnalyzer\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="TextAnalyzer\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="TextAnalyzer\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="TextAnalyzer\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="TextAnalyzer\static\scripts\bootstrap.js" />
+    <Content Include="TextAnalyzer\static\scripts\bootstrap.min.js" />
+    <Content Include="TextAnalyzer\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="TextAnalyzer\static\scripts\jquery-1.10.2.js" />
+    <Content Include="TextAnalyzer\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="TextAnalyzer\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="TextAnalyzer\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="TextAnalyzer\static\scripts\jquery.validate.js" />
+    <Content Include="TextAnalyzer\static\scripts\jquery.validate.min.js" />
+    <Content Include="TextAnalyzer\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="TextAnalyzer\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="TextAnalyzer\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="TextAnalyzer\static\scripts\respond.js" />
+    <Content Include="TextAnalyzer\static\scripts\respond.min.js" />
+    <Content Include="TextAnalyzer\static\scripts\_references.js" />
+    <Content Include="TextAnalyzer\templates\about.html" />
+    <Content Include="TextAnalyzer\templates\contact.html" />
+    <Content Include="TextAnalyzer\templates\index.html" />
+    <Content Include="TextAnalyzer\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{89e84394-af30-4b77-ad65-bb0eb365cc07}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -41,8 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTOs\Term.cs" />
+    <Compile Include="DTOs\UserUpdate.cs" />
     <Compile Include="Interfaces\ITermLogic.cs" />
     <Compile Include="Interfaces\ITermStorage.cs" />
+    <Compile Include="Interfaces\ITwitterLogic.cs" />
+    <Compile Include="Interfaces\IUserUpdateStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
